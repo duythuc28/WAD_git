@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>My First Page</h2>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = "Hello World!";
+var bodyNode = document.getElementsByTagName('body')[0];
+var newPNode = document.createElement('p');
+var textNode = document.createTextNode('This is test');
+newPNode.appendChild(textNode);
+bodyNode.appendChild(newPNode);
+</script>
+
+</body>
+</html>
+	

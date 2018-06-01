@@ -46,7 +46,7 @@ function Member(name, email) {
 	this.email = email;
 }
 
-member.prototype.present = function () {
+Member.prototype.present = function () {
 	alert("test");
 }; // this method is shared for all member objects
 
