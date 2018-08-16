@@ -26,8 +26,9 @@
 function sendPOSTRequest(data)
 { 
 	var bodyofrequest = “value=” + encodeURIComponent(data);
-	xhr.open(“POST", "display.php”, true);
-	xhr.setRequestHeader(‘Content-Type', ‘application/x-www-form-urlencoded' ); xhr.onreadystatechange = getData;
+	xhr.open("POST", "display.php", true);
+	xhr.setRequestHeader(‘Content-Type', ‘application/x-www-form-urlencoded' );
+	xhr.onreadystatechange = getData;
 	xhr.send(bodyofrequest);
 }
 
