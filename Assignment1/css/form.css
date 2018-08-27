@@ -1,0 +1,39 @@
+/*
+   StudentID: 101767225
+   Student name: Duy Thuc Pham
+   This file uses to setup layout for all the form in this project
+ */
+.form {
+    border-style: solid;
+    border-width: 1px;
+    border-color: DarkGrey;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+input[type=text], input[type=password] {
+    width: 200px;
+    padding: 1px;
+}
+
+input[type=submit]:hover {
+  background-color: #3399ff;
+  border-radius: 4px;
+}
+
+#email {
+  width: 400px;
+}
+
+#address, #description {
+  width: 85%;
+}
+
+#pick_up_hint {
+  font-size: 12px;
+  color: gray;
+}
+
+#minute_text {
+  width: 50px;
+}

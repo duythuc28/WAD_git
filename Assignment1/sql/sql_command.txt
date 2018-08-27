@@ -1,0 +1,30 @@
+<!--
+   StudentID: 101767225
+   Student name: Duy Thuc Pham
+   This file uses to create a Login page and its function
+-->
+--CUSTOMER TABLE--
+CREATE TABLE customer (
+  customer_number int(10) UNSIGNED PRIMARY KEY AUTO_INCREMENT,
+  customer_name varchar(30) NOT NULL,
+  customer_email varchar(50) NOT NULL,
+  customer_password varchar(30) NOT NULL,
+  customer_phone varchar(10) NOT NULL
+);
+----------------------------------------------------------------
+-- REQUEST TABLE--
+CREATE TABLE request (
+  request_number int(10) UNSIGNED PRIMARY KEY AUTO_INCREMENT,
+  customer_number int(10) UNSIGNED NOT NULL,
+  request_date timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  item_description varchar(50) NOT NULL,
+  weight int(11) NOT NULL,
+  pickup_address varchar(50) NOT NULL,
+  pickup_suburb varchar(10) NOT NULL,
+  pickup_date_time datetime NOT NULL,
+  receiver_name varchar(30) NOT NULL,
+  receiver_address varchar(50) NOT NULL,
+  receiver_suburb varchar(10) NOT NULL,
+  receiver_state varchar(10) NOT NULL,
+  FOREIGN KEY (customer_number) REFERENCES customer(customer_number) ON DELETE CASCADE
+);

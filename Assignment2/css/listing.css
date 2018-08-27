@@ -1,0 +1,74 @@
+/*
+  StudentID: 101767225
+  Student name: Duy Thuc Pham
+  This file uses to setup layout for listing page
+*/
+.listing_form {
+  margin: auto;
+  width: 70%;
+  padding: 10px;
+  background-color: #E0ECF8;
+}
+
+input[type=text] {
+    width: 50%;
+    display: inline;
+    padding: 1px;
+    margin-bottom: 5px;
+    text-align: left;
+    float: left;
+    margin-left: 5px;
+}
+
+#category_field {
+  width: 25%;
+}
+
+#start_price_money,#reserve_price_money,  #buy_now_price_money {
+  width: 50px;
+}
+
+
+#start_price_cent, #reserve_price_cent,#buy_now_price_cent {
+  width: 30px;
+}
+
+
+#day,#hour,#min {
+  display: inline;
+  float: left;
+  margin-left: 5px;
+}
+
+input[type=button]:hover {
+  background-color: #3399ff;
+  border-radius: 4px;
+
+}
+
+.text_field {
+  text-align: center;
+  width: 60%;
+  margin: auto;
+}
+
+.text_field label {
+  float: left;
+  width: 8em;
+  text-align: right;
+  margin-bottom: 5px;
+}
+
+#category {
+  display: inline;
+  padding: 1px;
+  margin-bottom: 5px;
+  text-align: left;
+  float: left;
+  margin-left: 5px;
+}
+
+
+.button_holder {
+  text-align: center;
+}

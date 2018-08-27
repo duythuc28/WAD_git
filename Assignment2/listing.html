@@ -1,0 +1,116 @@
+<!--
+   StudentID: 101767225
+   Student name: Duy Thuc Pham
+   This file uses to create a Listing page
+-->
+<!DOCTYPE html>
+<html lang="en-US">
+<header>
+  <title>ShipOnline Login Page</title>
+  <link rel="stylesheet" href="css/navigation.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/listing.css" />
+  <script type="text/javascript" src="js/listing.js"></script>
+</header>
+
+<body onload="showCategory()">
+
+  <div class="navigation">
+    <h2 class="navigation_title">Shop Online</h2>
+    <div class="grid-container">
+      <div class="grid-item"><a href="login.html">Home</a></div>
+      <div class="grid-item"><a href="listing.html">Listing</a></div>
+      <div class="grid-item"><a href="bidding.html">Bidding</a></div>
+      <div class="grid-item"><a href="maintenance.html">Maintenance</a></div>
+      <div class="grid-item"><a href="logout.php">Log out</a></div>
+    </div>
+  </div>
+  <hr>
+
+  <p style="text-align:center">
+    <i>To create a listing, enter listing details below</i>
+  </p>
+
+  <form method="post">
+    <fieldset class="listing_form">
+      <legend style="color: #6C798D; font-weight: bold;">Seller Details</legend>
+      <label style="color:red;font-style: italic;">* Required Fileds</label> <br /> <br />
+      <div class="text_field">
+        <label>Item name: <span style="color: red">*</span></label><input type="text" id="item_name_field" name="item_name_field"  required> <br> <br />
+        <div id="categoryDiv">
+          <label>Category:
+            <span style="color: red">*</span>
+          </label>
+          <select id="category" name="category" onchange="selectCategory()"> </select>
+          <input type="text" style="display:none;" id="category_field" name="category_field" value="" />
+        </div>
+        <br /><br />
+        <label>Description: <span style="color: red">*</span></label><input type="text" id="description_field" name="description_field"  required> <br> <br />
+        <label>Start price: <span style="color: red">*</span></label>
+        <input type="text" id="start_price_money" name="start_price_money" value="" required> <input type="text" id="start_price_cent" name="start_price_cent" value="00" required><br> <br />
+        <label>Reserve price: <span style="color: red">*</span></label>
+        <input type="text" id="reserve_price_money" name="reserve_price_money" value="" required> <input type="text" id="reserve_price_cent" name="reserve_price_cent" value="00" required><br> <br />
+        <label>Buy it now price: <span style="color: red">*</span></label>
+        <input type="text" id="buy_now_price_money" name="buy_now_price_money" value="" required> <input type="text" id="buy_now_price_cent" name="buy_now_price_cent" value="00" required><br> <br />
+        <label>Duration: <span style="color: red">*</span></label>
+        <select id="day" name="day" />
+        <option value="" selected disabled hidden>Day</option>
+        <script language="javascript" type="text/javascript">
+          var elm = document.getElementById('day'), // get the select
+            df = document.createDocumentFragment(); // create a document fragment to hold the options while we create them
+          for (var i = 0; i <= 30; i++) {
+            var option = document.createElement('option'); // create the option element
+            option.value = i; // set the value property
+            option.appendChild(document.createTextNode(i)); // set the textContent in a safe way.
+            df.appendChild(option); // append the option to the document fragment
+          }
+          elm.appendChild(df);
+        </script>
+        </select>
+        <select id="hour" name="hour" />
+        <option value="" selected disabled hidden>Hour</option>
+        <script language="javascript" type="text/javascript">
+          var elm = document.getElementById('hour'), // get the select
+            df = document.createDocumentFragment(); // create a document fragment to hold the options while we create them
+          for (var i = 0; i <= 23; i++) {
+            var option = document.createElement('option'); // create the option element
+            option.value = i; // set the value property
+            option.appendChild(document.createTextNode(i)); // set the textContent in a safe way.
+            df.appendChild(option); // append the option to the document fragment
+          }
+          elm.appendChild(df);
+        </script>
+        </select>
+        <select id="min" name="min" />
+        <option value="" selected disabled hidden>Min</option>
+        <script language="javascript" type="text/javascript">
+          var elm = document.getElementById('min'), // get the select
+            df = document.createDocumentFragment(); // create a document fragment to hold the options while we create them
+          for (var i = 0; i <= 59; i++) {
+            var option = document.createElement('option'); // create the option element
+            option.value = i; // set the value property
+            option.appendChild(document.createTextNode(i)); // set the textContent in a safe way.
+            df.appendChild(option); // append the option to the document fragment
+          }
+          elm.appendChild(df);
+        </script>
+        </select>
+        <br /><br />
+
+      </div>
+      <div class="button_holder">
+        <input type="button" name="listingButton" value="Listing" onclick="submitListing()">
+        <button type="button" name="resetButton" onclick="clearField()">Reset</button>
+      </div>
+    </fieldset>
+  </form>
+  <br />
+  <span id="results">
+
+  </span>
+
+  <span id="error_result"> </span>
+
+</body>
+
+</html>

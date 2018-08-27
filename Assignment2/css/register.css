@@ -1,0 +1,56 @@
+/*
+  StudentID: 101767225
+  Student name: Duy Thuc Pham
+  This file uses to setup layout for register page
+*/
+.register_form {
+  margin: auto;
+  width: 70%;
+  padding: 10px;
+  background-color: #E0ECF8;
+  /* height: 100%; */
+}
+
+input[type=text], input[type=password], input[type=email] {
+    width: 300px;
+    display: inline;
+    padding: 1px;
+    margin-bottom: 5px;
+    text-align: left;
+    float: left;
+    margin-left: 5px;
+    height: 20px;
+}
+
+
+input[type=button]:hover {
+  background-color: #3399ff;
+  border-radius: 4px;
+
+}
+
+input[type=button] {
+  background-color: #04C2E7;
+  /* border-radius: 4px; */
+  color: white;
+  height: 30px;
+  font-size: medium;
+}
+.text_field {
+  text-align: center;
+  width: 60%;
+  margin: auto;
+}
+
+.text_field label {
+  float: left;
+  width: 160px;
+  text-align: right;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+
+.button_holder {
+  text-align: center;
+}

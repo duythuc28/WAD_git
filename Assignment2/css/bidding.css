@@ -1,0 +1,65 @@
+/*
+  StudentID: 101767225
+  Student name: Duy Thuc Pham
+  This file uses to setup layout for bidding page
+*/
+.result {
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+  background-color: #E0ECF8;
+  border-width: thin;
+  border-color: black;
+  border-style: solid;
+  margin-bottom: 20px;
+}
+
+#item_number, #item_name, #category, #description, #buy_it_now_price, #bid_price, #time_left, #status {
+  float: left;
+  width: 200px;
+  text-align: right;
+}
+
+#item_number_data , #item_name_data, #category_data, #buy_it_now_price_data, #bid_price_data, #status_data  {
+  float: left;
+  display: inline;
+  width: 300px;
+  text-align: left;
+  padding-left: 5px;
+}
+
+.timeLeft {
+  font-style: italic;
+}
+
+#description_data {
+  float: left;
+  display: inline;
+  width: 300px;
+  text-align: left;
+  padding-left: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 30ch;
+}
+
+#time_left_data {
+  padding-left: 205px;
+  float: left;
+  text-align: left;
+}
+
+.button_holder {
+  text-align: center;
+}
+
+.buyItNowButton {
+  background-color: #008000;
+  color: white;
+}
+
+.placeBidButton {
+  background-color: #00008A;
+  color: white;
+}

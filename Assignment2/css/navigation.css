@@ -1,0 +1,51 @@
+/*
+  StudentID: 101767225
+  Student name: Duy Thuc Pham
+  This file uses to setup layout for navigation view
+*/
+.navigation_title {
+  color: #5B8AB9;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.grid-container {
+  display: grid;
+  grid-column-gap: 20px;
+  justify-content: center;
+  padding: 5px;
+  margin-bottom: 20px;
+  grid-template-columns: auto auto auto auto auto;
+}
+
+.grid-item a {
+  float: left;
+  color: #8F3998;
+  background-color: #D3D3D3;
+  text-align: center;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 17px;
+  width: 130px;
+  border-color: black;
+  border-style: solid;
+  border-width: thin;
+  border-radius: 5px;
+}
+
+.grid-item a:hover {
+  background-color: #ddd;
+  color: #8F3998;
+  border-color: black;
+  border-style: solid;
+  border-width: thin;
+  border-radius: 5px;
+}
+
+.grid-item a.active {
+  background-color: #4CAF50;
+  color: white;
+  border-style: solid;
+  border-width: thin;
+  border-radius: 5px;
+}

@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<items>
+  <item>
+    <customer_id>1</customer_id>
+    <item_id>1</item_id>
+    <item_name>iPhone 8</item_name>
+    <category>Phone</category>
+    <description>New Phone</description>
+    <startingPrice>1000</startingPrice>
+    <reservePrice>1002</reservePrice>
+    <buyItNowPrice>1005</buyItNowPrice>
+    <bidPrice>1000</bidPrice>
+    <duration>2018-05-19 22:48:52</duration>
+    <status>in process</status>
+    <currentDate>2018-05-19</currentDate>
+    <currentTime>21:47:52</currentTime>
+    <bidderID>0</bidderID>
+  </item>
+  <item>
+    <customer_id>1</customer_id>
+    <item_id>2</item_id>
+    <item_name>Nikon</item_name>
+    <category>Camera</category>
+    <description>New camera</description>
+    <startingPrice>120</startingPrice>
+    <reservePrice>130</reservePrice>
+    <buyItNowPrice>1450</buyItNowPrice>
+    <bidPrice>120</bidPrice>
+    <duration>2018-05-21 00:52:06</duration>
+    <status>in process</status>
+    <currentDate>2018-05-19</currentDate>
+    <currentTime>21:50:06</currentTime>
+    <bidderID>0</bidderID>
+  </item>
+  <item>
+    <customer_id>1</customer_id>
+    <item_id>3</item_id>
+    <item_name>New Phone</item_name>
+    <category>Phone</category>
+    <description>Test</description>
+    <startingPrice>100</startingPrice>
+    <reservePrice>200</reservePrice>
+    <buyItNowPrice>300</buyItNowPrice>
+    <bidPrice>100</bidPrice>
+    <duration>2018-05-21 01:47:46</duration>
+    <status>in process</status>
+    <currentDate>2018-05-19</currentDate>
+    <currentTime>23:46:46</currentTime>
+    <bidderID>0</bidderID>
+  </item>
+  <item>
+    <customer_id>1</customer_id>
+    <item_id>4</item_id>
+    <item_name>Test Camera</item_name>
+    <category>Camera</category>
+    <description>Camera</description>
+    <startingPrice>100</startingPrice>
+    <reservePrice>200.03</reservePrice>
+    <buyItNowPrice>300</buyItNowPrice>
+    <bidPrice>100</bidPrice>
+    <duration>2018-05-22 01:49:36</duration>
+    <status>in process</status>
+    <currentDate>2018-05-19</currentDate>
+    <currentTime>23:47:36</currentTime>
+    <bidderID>0</bidderID>
+  </item>
+  <item>
+    <customer_id>2</customer_id>
+    <item_id>5</item_id>
+    <item_name>Suzuki Z1000</item_name>
+    <category>Motorbike</category>
+    <description>BIke</description>
+    <startingPrice>100</startingPrice>
+    <reservePrice>200</reservePrice>
+    <buyItNowPrice>300</buyItNowPrice>
+    <bidPrice>100</bidPrice>
+    <duration>2018-05-21 01:51:00</duration>
+    <status>in process</status>
+    <currentDate>2018-05-19</currentDate>
+    <currentTime>23:49:00</currentTime>
+    <bidderID>0</bidderID>
+  </item>
+  <item>
+    <customer_id>2</customer_id>
+    <item_id>6</item_id>
+    <item_name>Suzuki A10</item_name>
+    <category>Motorbike</category>
+    <description>New bike</description>
+    <startingPrice>222</startingPrice>
+    <reservePrice>333</reservePrice>
+    <buyItNowPrice>444</buyItNowPrice>
+    <bidPrice>222</bidPrice>
+    <duration>2018-05-21 01:50:32</duration>
+    <status>in process</status>
+    <currentDate>2018-05-19</currentDate>
+    <currentTime>23:49:32</currentTime>
+    <bidderID>0</bidderID>
+  </item>
+</items>

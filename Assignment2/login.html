@@ -1,0 +1,55 @@
+<!--
+   StudentID: 101767225
+   Student name: Duy Thuc Pham
+   This file uses to create a Login page
+-->
+<!DOCTYPE html>
+<html lang="en-US">
+<header>
+  <title>ShipOnline Login Page</title>
+  <link rel="stylesheet" href="css/navigation.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/login.css" />
+  <script type="text/javascript" src="js/login_request.js"></script>
+</header>
+
+<body>
+
+  <div class="navigation">
+    <h2 class="navigation_title">Shop Online</h2>
+    <div class="grid-container">
+      <div class="grid-item"><a href="login.html">Home</a></div>
+      <div class="grid-item"><a href="listing.html">Listing</a></div>
+      <div class="grid-item"><a href="bidding.html">Bidding</a></div>
+      <div class="grid-item"><a href="maintenance.html">Maintenance</a></div>
+      <div class="grid-item"><a href="logout.php">Log out</a></div>
+    </div>
+  </div>
+  <hr>
+</body>
+
+<p id="signup_request">
+  Please <i>login</i> below or to register as a new user, <span class="register_link"> <a href="register.html"> Register Here.</a>  </span>
+</p>
+
+<form method="post">
+  <fieldset class="login_form">
+    <legend style="color: #6C798D; font-weight: bold;">Login Details</legend>
+    <label style="color:red;font-style: italic;">* Required Fileds</label> <br /> <br /> <br />
+    <div class="text_field">
+        <label>Email: <span style="color: red">*</span></label><input type="email" id="email_field" name="email_field" required> <br>
+        <label>Password: <span style="color: red">*</span></label><input type="password" id="password_field" password="password_field" required><br><br/>
+    </div>
+    <div class="button_holder">
+      <input type="button" name="login" value="Login" onclick="loginRequest(email_field.value, password_field.value)">
+      <button type="button" name="resetButton" onclick="clearField()">Reset</button>
+    </div>
+  </fieldset>
+</form>
+<br />
+<span id="results">
+
+</span>
+<span id="error_result"> </span>
+
+</html>

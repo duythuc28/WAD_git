@@ -1,0 +1,14 @@
+/*
+  StudentID: 101767225
+  Student name: Duy Thuc Pham
+  This file uses to setup layout for all pages in this project
+*/
+body {
+    background-color: #FFFFB5;
+}
+
+.error {
+  color: red;
+  font-style: italic;
+  font-size: 14px;
+}

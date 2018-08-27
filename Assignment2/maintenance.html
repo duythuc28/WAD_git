@@ -1,0 +1,40 @@
+<!--
+   StudentID: 101767225
+   Student name: Duy Thuc Pham
+   This file uses to create a Maintenance page
+-->
+<!DOCTYPE html>
+<html lang="en-US">
+<header>
+  <title>ShipOnline Login Page</title>
+  <link rel="stylesheet" href="css/navigation.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/maintenance.css" />
+  <script type="text/javascript" src="js/maintenance.js"></script>
+</header>
+
+<body>
+
+  <div class="navigation">
+    <h2 class="navigation_title">Shop Online</h2>
+    <div class="grid-container">
+      <div class="grid-item"><a href="login.html">Home</a></div>
+      <div class="grid-item"><a href="listing.html">Listing</a></div>
+      <div class="grid-item"><a href="bidding.html">Bidding</a></div>
+      <div class="grid-item"><a href="maintenance.html">Maintenance</a></div>
+      <div class="grid-item"><a href="logout.php">Log out</a></div>
+    </div>
+  </div>
+  <hr>
+
+  <button class="processAuctionButton" onclick="processAuction()"> Process Auction Items</button>
+  <button class="generateReportButton" onclick="generateReport()">Generate Report</button> <br />
+
+  <div id="result">
+
+  </div>
+
+  <span id="error_result"> </span>
+</body>
+
+</html>

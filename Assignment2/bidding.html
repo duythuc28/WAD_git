@@ -1,0 +1,60 @@
+<!--
+   StudentID: 101767225
+   Student name: Duy Thuc Pham
+   This file uses to create a Bidding page
+-->
+<!DOCTYPE html>
+<html lang="en-US">
+<header>
+  <title>ShipOnline Login Page</title>
+  <link rel="stylesheet" href="css/navigation.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/bidding.css" />
+  <link rel="stylesheet" href="css/bidView.css" />
+  <script type="text/javascript" src="js/bidding.js"></script>
+</header>
+
+<body onload="loadData()">
+
+  <div class="navigation">
+    <h2 class="navigation_title">Shop Online</h2>
+    <div class="grid-container">
+      <div class="grid-item"><a href="login.html">Home</a></div>
+      <div class="grid-item"><a href="listing.html">Listing</a></div>
+      <div class="grid-item"><a href="bidding.html">Bidding</a></div>
+      <div class="grid-item"><a href="maintenance.html">Maintenance</a></div>
+      <div class="grid-item"><a href="logout.php">Log out</a></div>
+    </div>
+  </div>
+  <hr>
+</body>
+
+<p style="text-align:center">
+  <i>Current aution items are listed below. To place a bid for an item, use the Place Bid Button.</i>
+</p>
+
+<p style="text-align:center">
+  <b><i>NOTE:</i></b><i> Item remaining time and bid prices are updated every 5 seconds</i>
+</p>
+<br />
+<div id="itemRequest">
+
+</div>
+
+<span id="error_result"> </span>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div class="input_content">
+      <label>Bid Price: <span style="color: red">*</span></label><input type="text" id="bid_field" name="bid_field" required> <br>
+      <input type="button" id="bidRequestButton" name="bidRequest" value="Add Bid">
+    </div>
+  </div>
+
+</div>
+
+</html>
